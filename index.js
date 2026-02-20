@@ -9,9 +9,8 @@ file.addEventListener('change', function (event) {
             const fileforPC = Array.from(filenum).map(function (x) {
                 if ((x >= 97 && x <= 122) || (x >= 65 && x <= 90)) {
                     x = x + 6;
-                } else {
-                    console.log("NIE");
                 }
+                
                 return String.fromCharCode(x);
             })
             console.log(fileforPC.join(''));
